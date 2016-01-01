@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="cryslo_tools">
-    <output-path>$PROJECT_DIR$/out/artifacts/cryslo_tools</output-path>
+    <output-path>$USER_HOME$/Documents/spongevanilla/mods</output-path>
     <root id="archive" name="cryslo_tools.jar">
       <element id="module-output" name="cryslo_tools" />
     </root>
