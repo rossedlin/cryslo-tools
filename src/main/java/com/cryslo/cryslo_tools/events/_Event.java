@@ -10,30 +10,17 @@ import java.util.Optional;
  */
 public class _Event
 {
-    private Player player;
-
     /**
-     * Retrieves the player object from the event
+     * Gets the player object
      *
      * @param event
      * @return
      */
-    protected boolean retrievePlayer(Event event)
+    protected Player getPlayer(Event event)
     {
         Optional<Player> optional = event.getCause().first(Player.class);
-        if(!optional.isPresent()) return false;
+        if(!optional.isPresent()) return null;
 
-        player = optional.get();
-        return true;
-    }
-
-    /**
-     * Gets the player object
-     *
-     * @return
-     */
-    protected Player getPlayer()
-    {
-        return player;
+        return optional.get();
     }
 }
